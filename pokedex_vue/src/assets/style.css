@@ -5,3 +5,7 @@
 .bgp {
     background: #424242 url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
 }
+
+.bg-l {
+    background-color: rgb(230, 230, 230);
+}
