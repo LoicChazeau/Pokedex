@@ -18,18 +18,16 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link ml-5" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link ml-5" href="http://localhost:8080/">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ml-4" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link ml-4" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link ml-4" href="/profil">Profil <span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
 					<button class="btn btn-outline-dark my-2 my-sm-0 mr-5" type="submit">Search</button>
+					<div class="text-white ml-4"><strong>Welcome {{ $auth.user.nickname }}</strong></div>
 					<div v-if="!$auth.loading">
 						<!-- show login when not authenticated -->
 						<a v-if="!$auth.isAuthenticated" @click="login" class="ml-5 mr-5 text-white"><strong>Sign in</strong></a>

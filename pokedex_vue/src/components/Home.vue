@@ -6,7 +6,9 @@
 				<div v-for="(pokemon, count) in pokemons.pokemons" :key="count" class="">
 					<div class="col-3 mt-5 ml-4">
 						<div class="card" style="width: 13rem;">
-							<img :src="require('../assets/img/' + pokemon.id + '.png')" alt="" class="card-img-top bg-l rounded" />
+							<a :href="'http://localhost:8080/pokemon/' + pokemon.id" class="button">
+								<img :src="require('../assets/img/' + pokemon.id + '.png')" alt="" class="card-img-top bg-l rounded" />
+							</a>
 							<div class="card-body">
 								<h6 v-if="pokemon.id < 10" class="card-title text-secondary">No.00{{ pokemon.id }}</h6>
 								<h6 v-if="pokemon.id >= 10 && pokemon.id < 100" class="card-title text-secondary">No.0{{ pokemon.id }}</h6>
