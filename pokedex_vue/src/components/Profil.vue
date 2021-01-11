@@ -2,7 +2,7 @@
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dangerr container">
 			<div class="row ml-2 mt-2 mb-2">
-				<img src="@/assets/logo.png" alt="" width="20%" class="mb-1" />
+				<img src="@/assets/logo.png" alt="logo pokdex" width="20%" class="mb-1" />
 				<button
 					class="navbar-toggler"
 					type="button"

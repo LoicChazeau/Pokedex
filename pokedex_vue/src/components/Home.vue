@@ -3,7 +3,7 @@
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dangerr container">
 			<div class="row ml-2 mt-2 mb-2">
-				<img src="@/assets/logo.png" alt="" width="20%" class="mb-1" />
+				<img src="@/assets/logo.png" alt="logo pokedex" width="20%" class="mb-1" />
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -45,7 +45,7 @@
 						<div class="col-3 mb-3 ml-4">
 							<div class="card" style="width: 13rem;">
 								<a :href="'http://localhost:8080/pokemon/' + pokemon.id" class="button">
-									<img :src="require('../assets/img/' + pokemon.id + '.png')" alt="" class="card-img-top bg-l rounded" />
+									<img :src="require('../assets/img/' + pokemon.id + '.png')" alt="image du pokemon" class="card-img-top bg-l rounded" />
 								</a>
 								<div class="card-body">
 									<h6 v-if="pokemon.id < 10" class="card-title text-secondary">No.00{{ pokemon.id }}</h6>
@@ -55,8 +55,8 @@
 										<strong>{{ pokemon.name }}</strong>
 									</h5>
 									<div class="row d-flex mt-3">
-										<img :src="require('../assets/class/' + pokemon.types.type1 + '.png')" alt="" width="40%" class="ml-3 mr-2" />
-										<img v-if="pokemon.types.type2" :src="require('../assets/class/' + pokemon.types.type2 + '.png')" alt="" width="40%" />
+										<img :src="require('../assets/class/' + pokemon.types.type1 + '.png')" alt="type numero 1 du pokemon" width="40%" class="ml-3 mr-2" />
+										<img v-if="pokemon.types.type2" :src="require('../assets/class/' + pokemon.types.type2 + '.png')" alt="type numero 2 du pokemon" width="40%" />
 									</div>
 								</div>
 							</div>
