@@ -15,8 +15,8 @@ Go on PhpMyAdmin, create a database name "Pokedex" and import pokedex.sql
 
 Now config the .env laravel:
 
-DB_USERNAME= "your username"
-DB_PASSWORD= "your password"
+-DB_USERNAME= "your username"
+-DB_PASSWORD= "your password"
 
 
 Now start the API with:
