@@ -18,18 +18,21 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active" id="home">
-							<a class="nav-link ml-5" href="http://localhost:8080/">Home <span class="sr-only">(current)</span></a>
+						<li class="nav-item active">
+							<a class="nav-link ml-3" href="http://localhost:8080/">Pokemon <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item" id="profil">
-							<a class="nav-link ml-4" href="/profil">Profil <span class="sr-only">(current)</span></a>
+						<li class="nav-item">
+							<a class="nav-link ml-3" href="/trade">Trade <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item" id="trade">
-							<a class="nav-link ml-4" href="/trade">Trade <span class="sr-only">(current)</span></a>
+						<li class="nav-item">
+							<a class="nav-link ml-3" href="/myteam">My Team <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ml-3" href="/profil">Profil <span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
-					<form class="form-inline my-2 my-lg-0 ml-5">
-						<input v-model="research" class="form-control mr-5" type="search" id="search" placeholder="Search pokemons" aria-label="Search" />
+					<form class="form-inline">
+						<input v-model="research" class="form-control mr-3" type="search" id="search" placeholder="Search pokemons" aria-label="Search" />
 						<div class="text-white ml-4" v-if="$auth.isAuthenticated">
 							<strong>Welcome {{ $auth.user.nickname }}</strong>
 						</div>

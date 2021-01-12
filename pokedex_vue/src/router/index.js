@@ -4,6 +4,7 @@ import Pokemon from "@/components/Pokemon";
 import Home from "@/components/Home";
 import Profil from "@/components/Profil";
 import Trade from "@/components/Trade";
+import MyTeam from "@/components/MyTeam";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
 		path: "/trade",
 		name: "Trade",
 		component: Trade
+	},
+	{
+		path: "/myteam",
+		name: "MyTeam",
+		component: MyTeam
 	}
 ];
 

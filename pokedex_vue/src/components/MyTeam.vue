@@ -20,10 +20,10 @@
 						<li class="nav-item">
 							<a class="nav-link ml-3" href="http://localhost:8080/">Pokemon <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link ml-3" href="/trade">Trade <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a class="nav-link ml-3" href="/myteam">My Team <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">

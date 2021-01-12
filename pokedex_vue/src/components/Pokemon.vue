@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dangerr container">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dangerr container">
 			<div class="row ml-2 mt-2 mb-2">
 				<img src="@/assets/logo.png" alt="logo pokedex" width="20%" class="mb-1" />
 				<button
@@ -17,17 +17,20 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item" id="home">
-							<a class="nav-link ml-5" href="http://localhost:8080/">Home <span class="sr-only">(current)</span></a>
+						<li class="nav-item">
+							<a class="nav-link ml-3" href="http://localhost:8080/">Pokemon <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item" id="profil">
-							<a class="nav-link ml-4" href="/profil">Profil <span class="sr-only">(current)</span></a>
+						<li class="nav-item">
+							<a class="nav-link ml-3" href="/trade">Trade <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item" id="trade">
-							<a class="nav-link ml-4" href="/trade">Trade <span class="sr-only">(current)</span></a>
+						<li class="nav-item">
+							<a class="nav-link ml-3" href="/myteam">My Team <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ml-3" href="/profil">Profil <span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
-					<form class="form-inline my-2 my-lg-0 mr-5">
+					<form class="form-inline">
 						<div class="text-white ml-4" v-if="$auth.isAuthenticated">
 							<strong>Welcome {{ $auth.user.nickname }}</strong>
 						</div>
