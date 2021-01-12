@@ -17,13 +17,6 @@ class PokedexController extends Controller
    */
   public function index()
   {
-    // $type1 = Types::select('type1')->get();
-    // $type2 = Types::select('type2')->get();
-    // $id_pok = Pokedex::select('id_pok')->get();
-    // $name_pok = Pokedex::select('nom_pok')->get();
-
-
-    // $pokedex = Pokedex::all();
     $pokedex = json_decode(DB::table('Pokedex')->get(), true);
     $return = ["pokemons" => []];
 
@@ -45,28 +38,6 @@ class PokedexController extends Controller
     };
 
     return response()->json($return, 200);
-
-
-    // $return = ["pokemons" =>
-    // [
-    //   (object) [
-    //     "id" => $id_pok,
-    //     "name" => $name_pok,
-    //     "types" =>
-    //     [
-    //       "type1" => $type1,
-    //       "type2" => $type2
-    //     ],
-    //     "image" => $id_pok . ".png",
-    //     "description" => "y en a pas"
-    //     // "stats" => ,
-    //     // "weaknesses" => ,
-    //     // "evolutions" => ,
-
-    //   ]
-    // ]];
-
-    // return $return;
   }
 
   /**

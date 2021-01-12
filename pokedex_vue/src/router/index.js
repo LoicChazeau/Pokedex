@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Pokemon from "@/components/Pokemon";
 import Home from "@/components/Home";
 import Profil from "@/components/Profil";
+import Trade from "@/components/Trade";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
 		path: "/profil",
 		name: "Profil",
 		component: Profil
+	},
+	{
+		path: "/trade",
+		name: "Trade",
+		component: Trade
 	}
 ];
 

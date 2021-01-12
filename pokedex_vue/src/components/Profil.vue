@@ -18,10 +18,13 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item" id="home">
-							<a class="nav-link ml-5" href="http://localhost:8080/">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link ml-4" href="http://localhost:8080/">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item active" id="profil">
 							<a class="nav-link ml-4" href="/profil">Profil <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item" id="trade">
+							<a class="nav-link ml-4" href="/trade">Trade <span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0 mr-5">
@@ -37,8 +40,17 @@
 			</div>
 		</nav>
 
-		<p>{{ $auth.user }}</p>
-		pokemon
+		<div class="container bg-blue bgp">
+			<div class="row d-flex justify-content-center">
+				<div class="col-6">
+					<div class="card-body text-white">
+						<h1 class="card-title mt-4 ml-3">Profil</h1>
+						<h3 class="card-text ml-5 mt-4">Name: {{ $auth.user.name }}</h3>
+						<h3 class="card-text ml-5 mt-3 mb-5">Email: {{ $auth.user.email }}</h3>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -58,3 +70,9 @@
 		}
 	};
 </script>
+
+<style scoped>
+	.bg-blue {
+		background-color: rgba(27, 52, 133, 0.884) !important;
+	}
+</style>

@@ -2,7 +2,7 @@
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dangerr container">
 			<div class="row ml-2 mt-2 mb-2">
-				<img src="@/assets/logo.png" alt="logo pokedex" width="20%" class="mb-1" />
+				<img src="@/assets/logo.png" alt="logo pokdex" width="20%" class="mb-1" />
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -14,16 +14,15 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item" id="home">
-							<a class="nav-link ml-5" href="http://localhost:8080/">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link ml-4" href="http://localhost:8080/">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item" id="profil">
 							<a class="nav-link ml-4" href="/profil">Profil <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item" id="trade">
+						<li class="nav-item active" id="trade">
 							<a class="nav-link ml-4" href="/trade">Trade <span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
@@ -39,31 +38,12 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container bg-blue bgp mb-5">
-			{{ pokemons.pokemons }}
-		</div>
+		<div class="container bg-blue bgp mb-5"></div>
 	</div>
 </template>
 
 <script>
 	export default {
-		data: function() {
-			return {
-				pokemons: "",
-				pokemon: "",
-			};
-		},
-		mounted: function() {
-			var requestOptions = {
-				method: "GET",
-				redirect: "follow"
-			};
-
-			fetch("http://127.0.0.1:8000/api/pokemons", requestOptions)
-				.then((response) => response.text())
-				.then((result) => console.log((this.pokemons = JSON.parse(result))))
-				.catch((error) => console.log("error", error));
-		},
 		methods: {
 			// Log the user in
 			login() {
